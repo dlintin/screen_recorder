@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom draggable region for the window */
+.app-drag-region {
+  -webkit-app-region: drag;
+  app-region: drag;
+}
+
+/* Make sure interactive elements within the drag region are not draggable */
+.app-drag-region button,
+.app-drag-region select,
+.app-drag-region input {
+  -webkit-app-region: no-drag;
+  app-region: no-drag;
+} 
